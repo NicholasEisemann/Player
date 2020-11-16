@@ -57,7 +57,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>370</y>
+      <y>360</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -77,7 +77,7 @@
      </size>
     </property>
     <property name="autoDefault">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="flat">
      <bool>true</bool>
@@ -87,7 +87,7 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>370</y>
+      <y>360</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -107,7 +107,7 @@
      </size>
     </property>
     <property name="autoDefault">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="flat">
      <bool>true</bool>
@@ -117,7 +117,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>370</y>
+      <y>360</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -147,7 +147,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>370</y>
+      <y>360</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -188,23 +188,13 @@
      <number>0</number>
     </property>
     <property name="autoDefault">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="default">
      <bool>false</bool>
     </property>
     <property name="flat">
      <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>320</y>
-      <width>281</width>
-      <height>20</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label">
