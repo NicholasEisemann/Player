@@ -95,34 +95,6 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
 
 
-class Controller():
-    def __init__(self):
-        self.play.clicked.connect(lambda: self.print_buttom())
-
-    def print_buttom(self, num=1):
-        print(num)
-
-def play_music():
-    if __name__ == '__main__':
-        filename = 'TravisScott-Goosebumps.mp3'
-        fullpath = QtCore.QDir.current().absoluteFilePath(filename)
-        media = QtCore.QUrl.fromLocalFile(fullpath)
-        content = QtMultimedia.QMediaContent(media)
-        player = QtMultimedia.QMediaPlayer()
-        player.setMedia(content)
-        player.play()
-
-    # def click(self, play):
-    #     app = QtWidgets.QApplication(sys.argv)
-    #     filename = 'TravisScott-Goosebumps.mp3'
-    #     fullpath = QtCore.QDir.current().absoluteFilePath(filename)
-    #     media = QtCore.QUrl.fromLocalFile(fullpath)
-    #     content = QtMultimedia.QMediaContent(media)
-    #     player = QtMultimedia.QMediaPlayer()
-    #     player.setMedia(content)
-    #     player.play()
-    #     sys.exit(app.exec_())
-
 
 if __name__ == "__main__":
     import sys
