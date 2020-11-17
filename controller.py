@@ -14,8 +14,9 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.stop.clicked.connect(lambda: self.btnClickedstop())
 
     def btnClickedstart(self):
-        pygame.mixer.music.load('TravisScott-Goosebumps.mp3')
-        pygame.mixer.music.play(-1)
+            pygame.mixer.music.load('TravisScott-Goosebumps.mp3')
+            pygame.mixer.music.play(0)
+
 
     def btnClickedstop(self):
         pygame.mixer.music.stop()
