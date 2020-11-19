@@ -5,7 +5,11 @@ from pygame import mixer
 import sys
 mixer.init()
 
+pygame.mixer.music.get_busy()
+
+
 class MyWindow(QtWidgets.QMainWindow):
+
     def __init__(self):
         super(MyWindow,self).__init__()
         self.ui = Ui_MainWindow()
@@ -13,22 +17,21 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.play.clicked.connect(lambda: self.btnClickedstart())
         self.ui.stop.clicked.connect(lambda: self.btnClickedstop())
         self.ui.pause.clicked.connect(lambda: self.btnClickedpause())
-        self.ui.next.clicked.connect(lambda: self.btnClickednext())
-        
+
 
     def btnClickedstart(self):
+        if pygame.mixer.music.get_busy() == False:
             pygame.mixer.music.load('TravisScott-Goosebumps.mp3')
             pygame.mixer.music.play(0)
-            pygame.mixer.unpause()
+        else:
+            pygame.mixer.music.unpause()
 
     def btnClickedstop(self):
-        pygame.mixer.music.stop()
-    
-    def btnClickedpause(self):
-        pygame.mixer.music.pause()
+            pygame.mixer.music.stop()
 
-    def btnClickednext(self):
-        pygame.mixer.music.unpause()
+    def btnClickedpause(self):
+            pygame.mixer.music.pause()
+
 
 
 
