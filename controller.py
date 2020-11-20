@@ -1,23 +1,23 @@
 from PyQt5 import QtWidgets
-from new_style_player import Ui_MainWindow
+from New_Style_Player import Ui_MainWindow_Player
+import Playlist
 import pygame
 from pygame import mixer
 import sys
-mixer.init()
 
-pygame.mixer.music.get_busy()
+mixer.init()
 
 
 class MyWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
-        super(MyWindow,self).__init__()
-        self.ui = Ui_MainWindow()
+        super(MyWindow, self).__init__()
+        self.ui = Ui_MainWindow_Player()
         self.ui.setupUi(self)
         self.ui.play.clicked.connect(lambda: self.btnClickedstart())
         self.ui.stop.clicked.connect(lambda: self.btnClickedstop())
         self.ui.pause.clicked.connect(lambda: self.btnClickedpause())
-
+        self.ui.playlist.clicked.connect(lambda: self.Playlist.Ui_MainWindow_Playlist)
 
     def btnClickedstart(self):
         if pygame.mixer.music.get_busy() == False:
@@ -27,12 +27,10 @@ class MyWindow(QtWidgets.QMainWindow):
             pygame.mixer.music.unpause()
 
     def btnClickedstop(self):
-            pygame.mixer.music.stop()
+        pygame.mixer.music.stop()
 
     def btnClickedpause(self):
-            pygame.mixer.music.pause()
-
-
+        pygame.mixer.music.pause()
 
 
 app = QtWidgets.QApplication([])
