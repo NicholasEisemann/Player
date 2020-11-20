@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from Style_Player_List import Ui_MainWindow, QtWidgets
-from Style_List import Ui_MainWindow_Playlist
+from style_list import Ui_MainWindow_Playlist
 import pygame
 from pygame import mixer
 import sys

@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
         self.stop.setFlat(True)
         self.stop.setObjectName("stop")
         self.listWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.listWidget.setGeometry(QtCore.QRect(260, 10, 231, 311))
+        self.listWidget.setGeometry(QtCore.QRect(260, 10, 235, 311))
         self.listWidget.setObjectName("listWidget")
         MainWindow.setCentralWidget(self.centralwidget)
 
