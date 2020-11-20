@@ -1,6 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from Style_Player_List import Ui_MainWindow, QtWidgets
-from style_list import Ui_MainWindow_Playlist
+from Style_PlayerNE import Ui_MainWindow
 import pygame
 from pygame import mixer
 import sys
@@ -27,17 +26,11 @@ def btnClickedstop():
 def btnClickedpause():
     pygame.mixer.music.pause()
 
-def showplaylistwindow():
-    global MainWindow
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_Playlist()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
 
 ui.play.clicked.connect(btnClickedstart)
 ui.stop.clicked.connect(btnClickedstop)
 ui.pause.clicked.connect(btnClickedpause)
-ui.playlist.clicked.connect(showplaylistwindow)
+
 
 
 
