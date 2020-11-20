@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets
-from styleplayer import Ui_MainWindow
+from new_style_player import Ui_MainWindow
 import pygame
 from pygame import mixer
 import sys
