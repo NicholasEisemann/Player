@@ -103,9 +103,9 @@ class Ui_MainWindow(object):
         self.stop.setDefault(False)
         self.stop.setFlat(True)
         self.stop.setObjectName("stop")
-        self.listView = QtWidgets.QListView(self.centralwidget)
-        self.listView.setGeometry(QtCore.QRect(260, 10, 231, 311))
-        self.listView.setObjectName("listView")
+        self.listWidget = QtWidgets.QListWidget(self.centralwidget)
+        self.listWidget.setGeometry(QtCore.QRect(260, 10, 231, 311))
+        self.listWidget.setObjectName("listWidget")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
