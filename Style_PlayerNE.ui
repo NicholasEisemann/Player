@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>509</width>
-    <height>332</height>
+    <width>474</width>
+    <height>334</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>0</width>
-    <height>0</height>
+    <width>474</width>
+    <height>334</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>16777215</width>
-    <height>16777215</height>
+    <width>474</width>
+    <height>334</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -53,42 +53,13 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QPushButton" name="playlist">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>280</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Playlist.png</normaloff>Playlist.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>30</width>
-      <height>30</height>
-     </size>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="play">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>220</y>
       <width>51</width>
       <height>41</height>
@@ -142,7 +113,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
       <width>211</width>
       <height>191</height>
@@ -176,7 +147,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>90</x>
       <y>220</y>
       <width>51</width>
       <height>41</height>
@@ -232,7 +203,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>160</x>
       <y>220</y>
       <width>51</width>
       <height>41</height>
@@ -285,11 +256,123 @@
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>230</x>
       <y>10</y>
       <width>231</width>
       <height>311</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="volume_up">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>280</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>volume_up.png</normaloff>volume_up.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>0</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>0</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="volume_low">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>280</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string notr="true"/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>volume_low.png</normaloff>volume_low.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>0</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>0</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
